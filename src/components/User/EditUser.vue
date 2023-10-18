@@ -2,10 +2,12 @@
   <div>
       <h1>Edit User</h1>
       <form v-on:submit.prevent="editUser">
-          <p>ชื่อ: <input type="text" v-model="user.name"></p>
-          <p>นามสกุล: <input type="text" v-model="user.lastname"></p>
-          <p>Email: <input type="text" v-model="user.email"></p>
-          <p>Password: <input type="text" v-model="user.password"></p>
+        <p>title: <input type="text" v-model="user.title"></p>
+        <p>author: <input type="text" v-model="user.author"></p>
+        <p>total_page: <input type="text" v-model="user.total_page"></p>
+        <p>publisher: <input type="text" v-model="user.publisher"></p>
+        <p>category: <input type="text" v-model="user.category"></p>
+        <p>price: <input type="text" v-model="user.price"></p>
           <p><button type="submit">edit user</button></p>
       </form>
       <hr>
@@ -23,12 +25,12 @@ import UsersService from '@/services/UsersService'
 export default {
   data() {
       return {
-          user: {
-              name: '',
-              lastname: '',
-              email: '',
-              password: '',
-              status: 'active'
+        title: {
+          author: "",
+          total_page: "",
+          publisher: "",
+          category: "",
+          price: ""
           }
       }
   },

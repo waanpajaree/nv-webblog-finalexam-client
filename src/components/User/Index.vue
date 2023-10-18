@@ -2,7 +2,7 @@
   <div>
     <h2>Get all users</h2>
     <p><button v-on:click="logout">Logout</button></p>
-    <h4>จํานวนผู้ใช้งาน {{ users.length }}</h4>
+    <h4>book {{ users.length }}</h4>
     <hr />
     <!-- ลูปตามจำนวน id (primary key) -->
     <div v-for="user in users" v-bind:key="user.id">
